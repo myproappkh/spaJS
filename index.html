@@ -7,7 +7,7 @@
 </head>
 <body>
   <nav>
-    <a href="/home">Home</a>
+    <a href="/">Home</a>
     <a href="/about">About</a>
     <a href="/contact">Contact</a>
   </nav>
@@ -17,7 +17,7 @@
     function renderPage(path) {
       const content = document.getElementById('app');
       switch (path) {
-        case '/home':
+        case '/':
           content.innerHTML = '<h1>Welcome to Home</h1>';
           break;
         case '/about':
@@ -49,7 +49,8 @@
     });
 
     // បង្ហាញទំព័រដំបូង
-    renderPage(window.location.pathname || '/home');
+    renderPage(window.location.pathname || '/');
   </script>
 </body>
+
 </html>
