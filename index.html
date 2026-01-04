@@ -4,6 +4,14 @@
   <meta charset="UTF-8">
 
   <title>JavaScript SPA</title>
+  <script> 
+window.addEventListener('popstate', () => {
+      renderPage(window.location.pathname);
+    });
+
+    // បង្ហាញទំព័រដំបូង
+    renderPage(window.location.pathname || '/');
+  </script>
 </head>
 <body>
   <nav>
@@ -54,3 +62,4 @@
 </body>
 
 </html>
+
